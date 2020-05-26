@@ -23,10 +23,10 @@ sans-serif;
 /*  Color scheme */
 
 $backgroundColor: #FFFF;
-$baseColor: #425768;
+$baseColor: #666A73;
 $baseColor-lighter: #d3d3d3;
+$orangeColor: #FFAF69;
 $textColor: #000000;
-$beigeColor: #F0E6E6;
 
 /*  Font sizes */
 
@@ -217,7 +217,7 @@ header {
 }
 
 nav {
-    background-color: $baseColor-lighter;
+    background-color: $baseColor;
     clear: right;
     font-size: 18px;
     font-weight: bold;
@@ -250,7 +250,7 @@ nav {
     #main-menu a,
     p,
     label {
-        color: black;
+        color: white;
         text-decoration: none;
         text-transform: none;
     }
@@ -473,7 +473,7 @@ nav {
 
 .card-box {
     position: relative;
-    background-color: #cbf6e3;
+    background-color: $baseColor-lighter;
     width: 31%;
     height: 215px;
     margin-bottom: 1rem;
@@ -545,7 +545,7 @@ div .card-box:hover h3 {
 /*** STUDENT CARD ***/
 
 #student-card {
-    background-color: #CCFFF8;
+    background-color: $orangeColor;
     .stud-card-img {
         display: inline-block;
         height: 215px;
@@ -901,7 +901,7 @@ footer {
 
 .footer-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-flow: wrap;
     margin: 1rem auto;
     font-size: 15px;
@@ -1022,7 +1022,7 @@ aside {
         li {
             border-bottom: 1px solid $baseColor;
             padding: $topAndBottomPaddingSmallTextbox 0 $topAndBottomPaddingSmallTextbox 2rem;
-            transition: all 0.s ease;
+            transition: all 0s ease;
             width: 100%;
         }
         li:last-child {
@@ -1338,15 +1338,15 @@ input[type=submit]:hover {
 }
 
 .month-box {
-    background-color: #d3d3d3;
+    background-color: $baseColor;
     max-height: 12rem;
     width: 24rem;
-    border: 1rem #F9F8F8;
+    border: 1rem $baseColor;
 }
 
 .month-name {
-    background-color: $baseColor-lighter;
-    color: black;
+    background-color: $baseColor;
+    color: white;
     max-height: 3rem;
     font-size: 2rem;
     margin: 0rem;

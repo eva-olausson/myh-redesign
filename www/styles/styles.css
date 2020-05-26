@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #f9f8f8;
+  background-color: #F9F8F8;
   font-size: 16px;
   font-family: "Noto Sans", "Verdana", "Arial", sans-serif;
   -webkit-transform: translateZ(0);
@@ -23,7 +23,7 @@ body {
 }
 
 /*  Container-div needed for parallax effect. Sets perspective for the
-    whole viewport and sets everything in an inner scrolling box. */
+        whole viewport and sets everything in an inner scrolling box. */
 #container {
   height: 100vh;
   overflow-x: hidden;
@@ -56,7 +56,7 @@ main.wrapper {
 }
 
 .wrapper > section {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 header.wrapper,
@@ -135,7 +135,7 @@ header ul {
 }
 
 header ul li {
-  border-left: 1px solid #425768;
+  border-left: 1px solid #666A73;
   display: inline-block;
   font-size: 0.9rem;
   margin-left: 0.5rem;
@@ -194,17 +194,18 @@ header #search-desktop {
   background-size: 1rem;
   background-position: right 0.5rem center;
   display: inline-block;
-  padding: 0.2rem 0.5rem;
-  width: 12rem;
+  padding: 0.7rem 0.5rem;
+  border: #000000 solid 1px;
+  width: 18rem;
 }
 
 .search-box button {
-  background-color: #425768;
-  border: 2px solid gray;
-  color: #eee;
+  background-color: #d3d3d3;
+  border: 1px solid grey;
+  color: #000000;
   font-size: 1rem;
   padding: 0.2rem 0.5rem;
-  margin-left: -0.4rem;
+  margin-left: 0.5rem;
 }
 
 .search-box button:hover {
@@ -212,16 +213,16 @@ header #search-desktop {
 }
 
 nav {
-  background-color: #425768;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  background-color: #666A73;
   clear: right;
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.7rem;
   position: relative;
   /* For larger vieports hide mobile navigation elements. */
   /*  On Edge remove submenues because they don't show up when navigation through them. */
   /*  On hover or keyboard-focus expand sub-menu. Doesn't work on IE/Edge 
-      and must therefore be seens as an enhancement not a feature. */
+          and must therefore be seens as an enhancement not a feature. */
   /*  Position last sub-menu so it doesn't appear off screen. */
 }
 
@@ -274,11 +275,11 @@ nav #main-menu li:last-child {
 }
 
 nav > div > ul > li:hover {
-  background-color: #526b81;
+  background-color: #d3d3d3;
 }
 
 nav li > ul {
-  background-color: #425768;
+  background-color: #FFFF;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   left: -0.04rem;
@@ -326,16 +327,16 @@ nav #main-menu li > ul > li:first-child {
 }
 
 nav li > ul > li:hover {
-  background-color: #526b81;
+  background-color: #d3d3d3;
 }
 
 @media screen and (max-width: 1205px) {
   nav {
     /*  Position a transparent checkbox to accept "clicks" to expand
-        the menu. */
+            the menu. */
     /*  Style the "hamburger" and set styles to prepare for tranformation. */
     /*  On "click", ie checkbox is checked, rotate top and bottom
-        hamburger into an "X" and make the middle one transparent. */
+            hamburger into an "X" and make the middle one transparent. */
     /*  Position menu of screen. */
     /*  Om "click" move menu in from the left. */
     /*  On mobile hide sub-menu. */
@@ -369,7 +370,7 @@ nav li > ul > li:hover {
     display: inline-block;
   }
   nav #hamburger-container span {
-    background: #eee;
+    background: black;
     border-radius: 3px;
     height: 4px;
     display: block;
@@ -417,7 +418,7 @@ nav li > ul > li:hover {
     z-index: 3;
   }
   nav #main-menu {
-    background-color: #425768;
+    background-color: #666A73;
     left: -414px;
     opacity: 0;
     position: absolute;
@@ -446,8 +447,8 @@ nav li > ul > li:hover {
 }
 
 /*  Move hero-image back in space and scale it up to normal size. 
-    Also set negative z-index to have everything else move on top
-    of the image. */
+        Also set negative z-index to have everything else move on top
+        of the image. */
 #hero-image {
   height: 620px;
   margin: 2rem 0 2rem;
@@ -518,7 +519,7 @@ nav li > ul > li:hover {
 
 .card-box {
   position: relative;
-  background-color: #cbf6e3;
+  background-color: #d3d3d3;
   width: 31%;
   height: 215px;
   margin-bottom: 1rem;
@@ -589,7 +590,7 @@ div .card-box:hover h3 {
 /*** CONTAINER-CARDS END ***/
 /*** STUDENT CARD ***/
 #student-card {
-  background-color: #ffccd4;
+  background-color: #FFAF69;
 }
 
 #student-card .stud-card-img {
@@ -671,7 +672,6 @@ div .card-box:hover h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   padding: 0.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -685,8 +685,13 @@ div .card-box:hover h3 {
 
 .aktuellt > h2 {
   display: block;
-  margin: 0 auto 1rem;
-  font-size: 2.5rem;
+  margin: 0 auto 2rem;
+  font-size: 2rem;
+}
+
+.aktuellt h3 {
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .aktuellt-card {
@@ -699,9 +704,7 @@ div .card-box:hover h3 {
           flex-direction: row;
   background-color: white;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 280px;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -725,22 +728,21 @@ a:visited {
 .aktuellt-card div:nth-child(1) {
   width: 40%;
   min-width: 438px;
-  min-height: 310px;
-  height: 100%;
+  height: 280px;
 }
 
 .aktuellt-card div:nth-child(2) {
   width: 60%;
-  margin: auto;
+  margin: 2rem;
   padding: 1rem;
 }
 
 .card-img-1 {
-  background-image: url(../images/aktuellt-1.jpg);
+  background-image: url(../images/green-chameleon-s9CC2SKySJM-unsplash.jpg);
 }
 
 .card-img-2 {
-  background-image: url(../images/aktuellt-2.jpg);
+  background-image: url(../images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg);
 }
 
 .card-img-3 {
@@ -860,7 +862,7 @@ a:visited {
 .extern-links-container .extern-links {
   margin: auto;
   width: 300px;
-  height: 277px;
+  height: 280px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,7 +886,7 @@ a:visited {
 }
 
 .extern-links-container .extern-links .link-images .link-logo {
-  max-width: 90%;
+  max-width: 75%;
   margin: auto;
 }
 
@@ -908,22 +910,23 @@ a:visited {
   font-size: 1em;
   text-align: center;
   position: relative;
-  top: 20%;
+  padding-bottom: 1rem;
 }
 
-.extern-links-container .extern-links .divlink h5 .right-arrow {
-  border: solid #425768;
+.extern-links-container .extern-links .divlink h5 .arrow-links {
+  background-image: url(../images/icon-arrow-right.svg);
+  border: solid #666A73;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
-  margin: 0 3px;
+  padding: 5px;
+  margin: 0 5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
 .extern-links-container .extern-links .divlink a {
   text-decoration: none;
-  color: #425768;
+  color: #666A73;
 }
 
 /*** EXTERN LINKS END ***/
@@ -996,21 +999,28 @@ a:visited {
 
 /*** VERKSAMHETSOMRADEN END ***/
 /***  FOOTER ***/
-#fotter {
-  width: 100%;
-  background-color: #425768;
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 3rem;
+footer {
+  background-color: #d3d3d3;
 }
 
-.column {
-  float: center;
-  width: 100%;
-  color: white;
-  border-bottom: solid;
-  border-width: 1px;
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: 1rem auto;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.footer-item {
+  padding-right: 6rem;
+  margin: 2rem;
 }
 
 /***  FOOTER END ***/
@@ -1033,8 +1043,8 @@ a:visited {
 }
 
 #tabs label {
-  background: #526b81;
-  color: #eee;
+  background: #d3d3d3;
+  color: #000000;
   cursor: pointer;
   display: block;
   font-weight: bold;
@@ -1049,7 +1059,7 @@ a:visited {
 }
 
 #tabs .tab {
-  background: #f9f8f8;
+  background: #FFFF;
   display: none;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1066,11 +1076,11 @@ a:visited {
 }
 
 #tabs input[type="radio"]:checked + label {
-  background: #f9f8f8;
-  border-left: 2px solid #425768;
-  border-top: 2px solid #425768;
-  border-right: 2px solid #425768;
-  color: #425768;
+  background: #FFFF;
+  border-left: 2px solid #666A73;
+  border-top: 2px solid #666A73;
+  border-right: 2px solid #666A73;
+  color: #666A73;
 }
 
 #tabs input[type="radio"]:checked + label + .tab {
@@ -1085,7 +1095,7 @@ a:visited {
             order: initial;
   }
   #tabs label {
-    border-bottom: 2px solid #425768;
+    border-bottom: 2px solid #666A73;
     margin-right: 0;
     margin-top: 0.2rem;
     width: 100%;
@@ -1112,15 +1122,15 @@ aside {
 }
 
 aside > nav {
-  background-color: #eee;
-  border: 1px solid #425768;
+  background-color: white;
+  border: 1px solid #d3d3d3;
   margin-bottom: 3rem;
   z-index: 1;
 }
 
 aside > nav h3 {
-  background: #425768;
-  color: #eee;
+  background: #666A73;
+  color: #000000;
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.5rem 0 0.5rem 2rem;
@@ -1131,10 +1141,10 @@ aside > nav ul {
 }
 
 aside > nav li {
-  border-bottom: 1px solid #425768;
+  border-bottom: 1px solid #666A73;
   padding: 0.5rem 0 0.5rem 2rem;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
   width: 100%;
 }
 
@@ -1143,7 +1153,7 @@ aside > nav li:last-child {
 }
 
 aside > nav a {
-  color: #425768;
+  color: #666A73;
   text-decoration: none;
   text-transform: none;
 }
@@ -1159,7 +1169,7 @@ aside > nav li > a::after {
 }
 
 aside > nav li:hover {
-  background-color: #526b81;
+  background-color: #d3d3d3;
 }
 
 aside > nav li:hover a {
@@ -1308,7 +1318,7 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 #kontakt form {
-  border: 1px solid #526b81;
+  border: 1px solid #d3d3d3;
   background-color: white;
   margin: 0 0 3rem;
   max-width: 40rem;
@@ -1324,7 +1334,7 @@ input[type=submit]:hover {
 #kontakt form input,
 #kontakt form select,
 #kontakt form textarea {
-  border: 1px solid #526b81;
+  border: 1px solid #d3d3d3;
   border-radius: 4px;
   font-size: 1rem;
   margin-top: 0.5rem;
@@ -1339,7 +1349,7 @@ input[type=submit]:hover {
 }
 
 #kontakt form button[type=submit] {
-  background-color: #526b81;
+  background-color: #d3d3d3;
   border: none;
   border-radius: 4px;
   color: white;
@@ -1399,7 +1409,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(1) {
   left: 60px;
   height: 150px;
-  background-color: #6d8ba3;
+  background-color: #9a9da5;
   -webkit-animation: new-heights 8s ease-in-out -2s infinite;
           animation: new-heights 8s ease-in-out -2s infinite;
 }
@@ -1407,7 +1417,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(2) {
   left: 100px;
   height: 50px;
-  background-color: #425768;
+  background-color: #666a73;
   -webkit-animation: new-heights 9s ease-in-out -4s infinite;
           animation: new-heights 9s ease-in-out -4s infinite;
 }
@@ -1415,7 +1425,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(3) {
   left: 140px;
   height: 100px;
-  background-color: #8da4b6;
+  background-color: #b5b7bd;
   -webkit-animation: new-heights 8.5s ease-in-out -1s infinite;
           animation: new-heights 8.5s ease-in-out -1s infinite;
 }
@@ -1423,7 +1433,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(4) {
   left: 180px;
   height: 120px;
-  background-color: #567187;
+  background-color: #7f838d;
   -webkit-animation: new-heights 10s ease-in-out 0s infinite;
           animation: new-heights 10s ease-in-out 0s infinite;
 }
@@ -1431,7 +1441,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(5) {
   left: 220px;
   height: 70px;
-  background-color: #425768;
+  background-color: #666a73;
   -webkit-animation: new-heights 8.8s ease-in-out -7s infinite;
           animation: new-heights 8.8s ease-in-out -7s infinite;
 }
@@ -1439,7 +1449,7 @@ input[type=submit]:hover {
 #graph #graph-content span:nth-child(6) {
   left: 260px;
   height: 90px;
-  background-color: #6d8ba3;
+  background-color: #9a9da5;
   -webkit-animation: new-heights 9.2s ease-in-out -3.5s infinite;
           animation: new-heights 9.2s ease-in-out -3.5s infinite;
 }
@@ -1484,25 +1494,23 @@ input[type=submit]:hover {
           justify-content: space-between;
 }
 
+.calendar-title {
+  text-align: center;
+}
+
 .month-box {
-  background-color: #F9F8F8;
+  background-color: #666A73;
   max-height: 12rem;
   width: 24rem;
-  border-radius: 0.8rem;
-  -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(168, 106, 106, 0.2);
-          box-shadow: 0 0.4rem 0.8rem 0 rgba(168, 106, 106, 0.2);
-  padding: 0rem 0rem 0.2rem 0rem;
-  border: 1rem #F9F8F8;
-  margin-bottom: 1rem;
+  border: 1rem #666A73;
 }
 
 .month-name {
-  background-color: #425768;
-  color: #F9F8F8;
+  background-color: #666A73;
+  color: white;
   max-height: 3rem;
   font-size: 2rem;
   margin: 0rem;
-  border-radius: 0.8rem 0.8rem 0rem 0rem;
   text-align: center;
 }
 
@@ -1515,9 +1523,6 @@ input[type=submit]:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #F9F8F8;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0.2rem 0.4rem 0 rgba(168, 106, 106, 0.2);
-          box-shadow: 0 0.2rem 0.4rem 0 rgba(168, 106, 106, 0.2);
   margin: 0.3rem 0.5rem;
   padding: 0rem;
   height: 4rem;
