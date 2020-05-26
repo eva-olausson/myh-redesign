@@ -46,7 +46,7 @@ span.pdf-icon {
 
 /*  Helper-class to centralize and set width of conten. */
 .wrapper {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 3rem auto;
   padding: 0 1rem;
 }
@@ -56,7 +56,7 @@ main.wrapper {
 }
 
 .wrapper > section {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 header.wrapper,
@@ -254,7 +254,7 @@ nav li {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 nav li,
@@ -370,7 +370,7 @@ nav li > ul > li:hover {
     display: inline-block;
   }
   nav #hamburger-container span {
-    background: black;
+    background: white;
     border-radius: 3px;
     height: 4px;
     display: block;
@@ -1188,7 +1188,7 @@ aside > nav li:hover a {
 }
 
 #publication-filter-wrapper {
-  background-color: #d3d3d3;
+  background-color: #666A73;
   color: #000000;
   padding: 0.5rem;
   max-width: 800px;

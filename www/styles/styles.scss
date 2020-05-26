@@ -83,7 +83,7 @@ span.pdf-icon {
 /*  Helper-class to centralize and set width of conten. */
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1300px;
     margin: $verticalMarginBetweenElms auto;
     padding: 0 1rem;
 }
@@ -93,7 +93,7 @@ main.wrapper {
 }
 
 .wrapper>section {
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 header.wrapper,
@@ -244,7 +244,7 @@ nav {
         cursor: pointer;
         display: inline-block;
         position: relative;
-        padding: 1rem;
+        padding: 1.2rem;
     }
     li,
     #main-menu a,
@@ -335,7 +335,7 @@ nav {
         }
         /*  Style the "hamburger" and set styles to prepare for tranformation. */
         #hamburger-container span {
-            background: black;
+            background: white;
             border-radius: 3px;
             height: 4px;
             display: block;
@@ -1068,7 +1068,7 @@ aside {
 }
 
 #publication-filter-wrapper {
-    background-color: $baseColor-lighter;
+    background-color: $baseColor;
     color: $textColor;
     padding: $topAndBottomPaddingSmallTextbox;
     max-width: 800px;
