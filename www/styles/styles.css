@@ -215,7 +215,7 @@ header #search-desktop {
 nav {
   background-color: #666A73;
   clear: right;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
   /* For larger vieports hide mobile navigation elements. */
@@ -1079,11 +1079,19 @@ footer {
   border-left: 2px solid #666A73;
   border-top: 2px solid #666A73;
   border-right: 2px solid #666A73;
-  color: #666A73;
+  color: #000000;
 }
 
 #tabs input[type="radio"]:checked + label + .tab {
   display: block;
+}
+
+#nyhetsrum a {
+  color: #000000;
+}
+
+#nyhetsrum a :hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
@@ -1111,7 +1119,7 @@ footer {
 }
 
 #nyhetsrum .aktuellt-card a {
-  color: #0000ee;
+  color: #000000;
 }
 
 /***  NYHETSRUM END ***/
@@ -1130,7 +1138,7 @@ aside > nav {
 aside > nav h3 {
   background: #666A73;
   color: white;
-  font-size: 1.3rem;
+  font-size: 18px;
   line-height: 1.5rem;
   padding: 0.5rem 0 0.5rem 2rem;
 }
@@ -1179,8 +1187,8 @@ aside > nav li:hover a {
 }
 
 #publication-filter-wrapper {
-  background-color: #526b81;
-  color: white;
+  background-color: #d3d3d3;
+  color: #000000;
   padding: 0.5rem;
   max-width: 800px;
   margin: 0 auto;
@@ -1242,7 +1250,7 @@ aside > nav li:hover a {
 }
 
 .pub-list-text a {
-  color: #0000ee;
+  color: #000000;
   text-decoration: none;
 }
 

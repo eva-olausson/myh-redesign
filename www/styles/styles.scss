@@ -219,7 +219,7 @@ header {
 nav {
     background-color: $baseColor;
     clear: right;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
     position: relative;
     #search-mobile {
@@ -963,11 +963,18 @@ footer {
     border-left: 2px solid $baseColor;
     border-top: 2px solid $baseColor;
     border-right: 2px solid $baseColor;
-    color: $baseColor;
+    color: $textColor;
 }
 
 #tabs input[type="radio"]:checked+label+.tab {
     display: block;
+}
+
+#nyhetsrum a {
+    color: $textColor;
+     :hover {
+        text-decoration: underline;
+    }
 }
 
 @media (max-width: 900px) {
@@ -991,7 +998,7 @@ footer {
     margin: 1rem auto;
     width: 100%;
     a {
-        color: #0000ee;
+        color: $textColor;
     }
 }
 
@@ -1011,7 +1018,7 @@ aside {
         h3 {
             background: $baseColor;
             color: white;
-            font-size: 1.3rem;
+            font-size: 18px;
             line-height: 1.5rem;
             padding: $topAndBottomPaddingSmallTextbox 0 $topAndBottomPaddingSmallTextbox 2rem;
         }
@@ -1059,8 +1066,8 @@ aside {
 }
 
 #publication-filter-wrapper {
-    background-color: #526b81;
-    color: white;
+    background-color: $baseColor-lighter;
+    color: $textColor;
     padding: $topAndBottomPaddingSmallTextbox;
     max-width: 800px;
     margin: 0 auto;
@@ -1111,7 +1118,7 @@ aside {
         color: darkgray;
     }
     a {
-        color: #0000ee;
+        color: $textColor;
         text-decoration: none;
         &:hover {
             text-decoration: underline;
