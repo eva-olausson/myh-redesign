@@ -896,21 +896,22 @@ a:visited {
 /***  FOOTER ***/
 
 footer {
-    background-color: #d3d3d3;
+    background-color: $baseColor;
+    color: white;
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
     margin: 1rem auto;
     font-size: 15px;
     line-height: 2;
+    max-width: 1280px;
 }
 
 .footer-item {
-    padding-right: 6rem;
-    margin: 2rem;
+    padding-right: 3rem;
+    margin: 1rem;
 }
 
 
@@ -1182,6 +1183,13 @@ p {
     margin-bottom: 1rem;
 }
 
+a {
+    color: $textColor;
+     :hover {
+        text-decoration: underline;
+    }
+}
+
 
 /* When moving the mouse over the submit button, add a darker green color */
 
@@ -1335,6 +1343,9 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     padding: 10px 0;
     justify-content: space-between;
+     :hover {
+        cursor: pointer;
+    }
 }
 
 .calendar-title {
