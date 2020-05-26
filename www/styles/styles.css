@@ -1013,7 +1013,7 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 1rem auto;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 2;
   max-width: 1280px;
 }
