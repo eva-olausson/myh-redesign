@@ -219,7 +219,7 @@ header {
 nav {
     background-color: $baseColor;
     clear: right;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     position: relative;
     #search-mobile {
@@ -252,7 +252,6 @@ nav {
         color: white;
         text-decoration: none;
         text-transform: none;
-        padding: 1rem 0;
     }
     #main-menu li:first-child {
         padding-left: 0;
@@ -1006,13 +1005,13 @@ aside {
     margin-top: $verticalMarginBetweenElms;
     &>nav {
         background-color: white;
-        border: 1px solid $baseColor-lighter;
+        border: 1px solid $baseColor;
         margin-bottom: $verticalMarginBetweenElms;
         z-index: 1;
         h3 {
             background: $baseColor;
-            color: $textColor;
-            font-size: 1rem;
+            color: white;
+            font-size: 1.3rem;
             line-height: 1.5rem;
             padding: $topAndBottomPaddingSmallTextbox 0 $topAndBottomPaddingSmallTextbox 2rem;
         }
@@ -1022,14 +1021,14 @@ aside {
         li {
             border-bottom: 1px solid $baseColor;
             padding: $topAndBottomPaddingSmallTextbox 0 $topAndBottomPaddingSmallTextbox 2rem;
-            transition: all 0s ease;
+            transition: all 0.2s ease;
             width: 100%;
         }
         li:last-child {
             border: none;
         }
         a {
-            color: $baseColor;
+            color: $textColor;
             text-decoration: none;
             text-transform: none;
         }
@@ -1042,11 +1041,8 @@ aside {
             background-size: cover;
             margin-right: $arrowMarginRight;
         }
-        li:hover {
-            background-color: $baseColor-lighter;
-        }
         li:hover a {
-            color: white;
+            text-decoration: underline;
         }
     }
 }
@@ -1215,7 +1211,7 @@ input[type=submit]:hover {
     }
     /* Style the submit button with a specific background color etc */
     button[type=submit] {
-        background-color: $baseColor-lighter;
+        background-color: $baseColor;
         border: none;
         border-radius: $borderRadius;
         color: white;
@@ -1456,6 +1452,9 @@ input[type=submit]:hover {
 #om-oss-box {
     position: relative;
     z-index: 1;
+    a {
+        color: black;
+    }
 }
 
 #om-oss-box>.newarrow {

@@ -215,7 +215,7 @@ header #search-desktop {
 nav {
   background-color: #666A73;
   clear: right;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   position: relative;
   /* For larger vieports hide mobile navigation elements. */
@@ -263,7 +263,6 @@ nav label {
   color: white;
   text-decoration: none;
   text-transform: none;
-  padding: 1rem 0;
 }
 
 nav #main-menu li:first-child {
@@ -1123,15 +1122,15 @@ aside {
 
 aside > nav {
   background-color: white;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #666A73;
   margin-bottom: 3rem;
   z-index: 1;
 }
 
 aside > nav h3 {
   background: #666A73;
-  color: #000000;
-  font-size: 1rem;
+  color: white;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   padding: 0.5rem 0 0.5rem 2rem;
 }
@@ -1143,8 +1142,8 @@ aside > nav ul {
 aside > nav li {
   border-bottom: 1px solid #666A73;
   padding: 0.5rem 0 0.5rem 2rem;
-  -webkit-transition: all 0s ease;
-  transition: all 0s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   width: 100%;
 }
 
@@ -1153,7 +1152,7 @@ aside > nav li:last-child {
 }
 
 aside > nav a {
-  color: #666A73;
+  color: #000000;
   text-decoration: none;
   text-transform: none;
 }
@@ -1168,12 +1167,8 @@ aside > nav li > a::after {
   margin-right: 1rem;
 }
 
-aside > nav li:hover {
-  background-color: #d3d3d3;
-}
-
 aside > nav li:hover a {
-  color: white;
+  text-decoration: underline;
 }
 
 /*** ASIDE END ***/
@@ -1349,7 +1344,7 @@ input[type=submit]:hover {
 }
 
 #kontakt form button[type=submit] {
-  background-color: #d3d3d3;
+  background-color: #666A73;
   border: none;
   border-radius: 4px;
   color: white;
@@ -1624,6 +1619,10 @@ input[type=submit]:hover {
 #om-oss-box {
   position: relative;
   z-index: 1;
+}
+
+#om-oss-box a {
+  color: black;
 }
 
 #om-oss-box > .newarrow {
