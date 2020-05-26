@@ -221,7 +221,6 @@ nav {
     clear: right;
     font-size: 18px;
     font-weight: bold;
-    padding: 0.7rem;
     position: relative;
     #search-mobile {
         display: none;
@@ -253,6 +252,7 @@ nav {
         color: white;
         text-decoration: none;
         text-transform: none;
+        padding: 1rem 0;
     }
     #main-menu li:first-child {
         padding-left: 0;

@@ -217,7 +217,6 @@ nav {
   clear: right;
   font-size: 18px;
   font-weight: bold;
-  padding: 0.7rem;
   position: relative;
   /* For larger vieports hide mobile navigation elements. */
   /*  On Edge remove submenues because they don't show up when navigation through them. */
@@ -264,6 +263,7 @@ nav label {
   color: white;
   text-decoration: none;
   text-transform: none;
+  padding: 1rem 0;
 }
 
 nav #main-menu li:first-child {
